@@ -1,0 +1,15 @@
+def wedge
+ puts "enter a number that is less than ten"
+x=gets.chomp.to_i
+while (x>=1)
+      for i in 1...w
+             if i<w
+        print "x"
+      elsif i==w
+        print "x\n"
+         end
+        end
+    x-=1
+  end
+end
+wedge

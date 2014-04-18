@@ -1,0 +1,27 @@
+body
+{
+width: 500px;
+margin:auto;
+text-align: center;
+border-bottom: 1px green;
+border-top:1px white;
+}
+dl
+{
+
+}
+dd
+{
+display: block;
+-webkit-margin-start:40px;
+}
+dt
+{
+color: red;
+cursor: pointer;
+font-weight: bold;
+font-size: 2.5em;
+line-height: 2em;
+background: blue;
+
+}

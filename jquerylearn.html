@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is me</title>
+<head>
+</head>
+<body>
+<p>I am leaning jQueryy</p>
+<strong class='changetxt'>this sentence is in <EM>Strong </EM>mode</strong>
+<img src="njiiri.gif" height="28px" width="30px" alt="This is njiiri">
+<script src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+	$(document).ready (function() 
+	{/*the function below exchanges the p content with the strong content*/ 
+		var stronContent=$('strong').text();
+		//var pContent=$('p').text();
+		//$('strong').text(pContent);
+		//$('p').text(stronContent);
+		$('.changetxt').text('Mimi ni njiiri');
+		$('strong:even').text('learning is progressive');
+		$('strong:odd').text('learning is not progressive');
+		$('strong:eq(2)').text('hahahuu');
+		alert($(':input').length)
+		//$('img').attr({src: 'image.jpg',alt :'changed'});
+		//var pContent=$('p').text();
+		//alert(pContent)//getting the text of an element.the text in the paragraph is in the alert
+		//var imagefile=$('img').attr('src');
+		//alert(imagefile);
+   //alert($('img').attr('width'));
+});
+</script>
+<form action="" method="post">
+Your name<input type="text"/>
+<input type="checkbox"/>
+<input type="radio"/>
+<select><option>FirstChoice</option>
+</select>
+<input type="submit" />
+	
+</form>
+</body>
+</html>
