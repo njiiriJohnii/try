@@ -4,71 +4,99 @@
 <head>
 	<title></title>
 
-    <script src="js/jquery-1.10.2.js"></script>
+    
 <link rel="stylesheet" type="text/css" href="cdn.css">
 </head>
 <body id="container">
+<article>
 <h1>My awesome post</h1>
 <p>Kelvin System had built MSE in 2006 while Mike Criegler  had built SymSy in 2008 then they came together to build burbun inc then instagram. Burbun inc was not as effective but people loved</p>
 <p>Kelvin System had built MSE in 2006 while Mike Criegler  had built SymSy in 2008 then they came together to build burbun inc then instagram. Burbun inc was not as effective but people loved</p>
 <p>Kelvin System had built MSE in 2006 while Mike Criegler  had built SymSy in 2008 then they came together to build burbun inc then instagram. Burbun inc was not as effective but people loved</p>
 <P>Koi company which is a micro finance, the main file server last year was 2/3 up most of the
-times, resulting to the company making a lot of loss and many customers complain. As a result during the board meeting since they are using distributed system it was agreed the ICT department be allocated ksh 400,000 for buying new servers for replication purpose of which ksh 80,000 will go to installation cost. Then the board state they will expect nothing less than 98% performance and availability of the servers. Do they have enough fund to achieve just</P>
+times, resulting to the company making a lot of loss and many customers complain. As a result during the board meeting since they are using distributed system it was agreed the ICT department be allocated ksh 400,000 for buying new servers for replication purpose of which ksh 80,000 will go to installation cost. Then the board state they will expect nothing less than 98% performance and availability of the servers. Do they have enough fund to achieve just</P></article>
 <div id="contact">
-<h2>Contact Me</h2>
-<form action="#">
-<ul>
-	<li>
-		<label for="name">Name:</label>
-		<input name="name" id="name">
-	</li>
+  <h2>Contact Me</h2>
+  <form action="#">
+    <ul>
+	    <li>
+		    <label for="name">Name:</label>
+		    <input name="name" id="name">
+	    </li>
 	</br>
-	<li>
-		<label for="email">Email Address:</label>
-		<input name="email" id="email">
-	</li>
+	    <li>
+		    <label for="email">Email Address:</ label>
+		    <input name="email" id="email">
+	    </li>
 	</br>
-	<li>
-		<label for="comments">What'sUp</label>
-		<textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+	        <li>
+		        <label for="comments">What's Up</label>
+		        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
 
-	</li>
-	</br>
+	        </li>
+	        </br>
 	<li> <input type ="submit" value="Submit"></li>
 </ul>
 </form>
 </div>
 
-	
+	<script src="js/jquery-1.10.2.js"></script>
 
 
 <script>
+
 	(function(){
 		$('html').addClass('js');
-		var contactForm={
+		var contactForm=
+		{
 			container:$('#contact'),
-			init:function(){
-				$('<button></button>',{
+
+			config: {
+				effect: 'slideToggle'
+				speed: 500
+			}
+
+			init: function(config){
+				$.extend(this.config, config);
+
+				$('<button></button>',
+				{
 					text:'contactMe'
 				})
 				.insertAfter('article:first')
-				.on ('click',function(){
-				});
-		},
-		show:function()
+				.on ('click',this.show);
+				},
+		
+		  show: function() {
+
+		var cf = contactForm,
+			container = cf.container,
+			config = cf.config;
+
+		if ( container.is(':hidden') ) {
+			contactForm.close.call(container);
+			container[config.effect](config.speed);
+		}
+	},
+		close: function()
 		{
-			contactForm.close.call(contactForm.container);
-			contactForm.container.show();
-		},
-		close: function(){
-			var $this = $(this);
+			var $this = $(this),
+			config=contactForm.config;
+
+		if ($this.find('span.close').length) return;
+
 			$('<span class=close>X</span>')
 			.prependTO(this)
-			.on('click',function(){
-				$this.hide();
+			.on('click',function()
+			{
+
+			$this[config.effect].(config.speed)
 			})
 		}
 	};
+	contactForm.init({
+		speed: 300
+	});
 	})();
 </script>
 

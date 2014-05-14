@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NavigationBar</title>
+<script type="text/javascript" src="jquery-1.10.2.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.js"></script>
+<link rel="stylesheet" href="bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css.css">
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#main').cycle({ 
+	fx:    'shuffle', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+    next:  '#right', 
+    
+	});
+});
+</script>
+
+</head>
+<body>
+<div id="container">
+<div id="erst">
+<ul id="navmenu">
+			<li><a href="#">Home</a></li>
+			<li><a href="cntctform.html">Contactus</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Sighnup</a></li>
+			<li><a href="#">Login</a></li>
+		</ul>
+		</div><!--end of erst-->
+		<div id="main">
+		<img src="img/im1.jpg" width="1000" height="400" />
+		<img src="img/im2.jpg" width="1000" height="400" />
+		<img src="img/im3.jpg" width="1000" height="400" />
+		<img src="img/im4.jpg" width="1000" height="400" />
+
+		</div>
+		<div id="side" style="float:top">
+
+		</div>
+
+		</div><!--end of container-->
+		<div id="footer">
+		<div class="table">
+		<ul id="horizon-list">
+			<li><a href="#">Home|</a></li>
+			<li><a href="cntctform.html">Contactus|</a></li>
+			<li><a href="#">FAQ|</a></li>
+			<li><a href="#">Services|</a></li>
+			<li><a href="#">Complaints|</a></li>
+			<li><a href="#">Compliments|</a></li><br/><br/>
+
+			</ul>
+              
+			</div>
+		</div><!--end of footer-->	
+
+</body>
+</html>
+
+
+

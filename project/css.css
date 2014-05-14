@@ -1,0 +1,172 @@
+
+	body{
+		
+		height: 1200px;
+		background-color: #E0FFFF;
+	}
+ #container
+ {
+ 	 margin-right: auto;
+ 	 margin-left: auto;
+ 	 width: 1000px;
+ 	 height: 1200px;
+	 text-align: center;
+	 background-color: white;
+	 margin-top: 0px;
+	 margin-bottom: 0px;
+	 position: relative;
+     top:0;
+     border-radius: 15px;
+}
+	#erst{
+		width: 1000px;
+		background: aqua;
+        border-radius: 0px;
+        height: 100px;
+        background-color: aqua;
+	}
+	ul#navmenu li{
+		display: inline;
+        float: left;
+		list-style: none;
+		margin-right: 25px;
+		padding: 10px;
+	}
+	ul#navmenu li a{
+
+        text-decoration: none;
+		font-family: arial;
+		font-size: 20px;
+		color: #000;
+		border-radius: 0px;
+		padding: 10px;
+		text-align: center;
+	    background: transparent;
+
+	}
+	ul#navmenu li a:hover{
+		background: orange;
+		text-shadsow:1px 1px 1px 1px black;
+	}
+	#main{
+		height: 400px;
+		background-color: #00FF7F;
+		opacity: 0.1%;
+		width: 1000px;
+		margin-top: 20px;
+	}
+	#side{
+		height :650px;
+		width:300px;
+		float: right;
+		background-color: #FFFFCC;
+		margin-top: 520px;
+		overflow: scroll;
+        right: 0;
+        position: absolute;
+         top: 0px;
+
+
+	}
+	#contact{
+	background: #e3e3e3;
+	padding: 1em 2em;
+	margin: auto;
+	width: 1000px;
+	top: 0;
+	height: 1000px;
+}
+#inner
+{
+width: 600px;
+margin: auto;
+
+}
+
+
+#contact#inner h2
+{
+	margin-top: 0;
+}
+#contact#inner ul
+{
+	padding: 0;
+}
+#contact#inner li
+{
+	list-style: none;
+	margin-bottom: 1em;
+}
+/*.close
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-weight: bold;
+	font-family: sans-serif;
+	cursor: pointer;
+}*/
+input,textarea
+{
+	width: 100%;
+	line-height: 1em;
+}
+input[type=submit]
+{
+	width: auto;
+
+}
+label
+{
+	display: block;text-align: left;
+}
+#footer{
+	height: 100px;
+	width: 1000px;
+	border-radius: 15px;
+	background-color: #00008B;
+	margin: auto;
+	text-align: center;
+	border:5px dotted #DC143C;
+	
+	
+	
+	
+
+}/*
+#footer li{
+	list-style: none;
+	float:left;
+	padding: 0px;
+	font-size: 15px;
+	font-family: verdana;
+	font-style: italic;
+    display: inline;
+
+
+
+
+}*/
+#copi{
+	float:left;
+	color:#FF0000;
+}
+
+.table 
+{
+	display: table;   
+	margin: 0 auto;
+}
+
+ul#horizon-list 
+{
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+
+}
+	ul#horizon-list li 
+{
+		display: inline;
+		font-size: 20px;
+}
